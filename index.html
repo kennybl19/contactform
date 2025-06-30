@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Contact Us</h1> 
+  <form id="form">
+    <div class="name-wrapper">
+      <div class="name">
+        <label for="">First Name</label>
+        <input type="text" id="firstname>
+        <p class="error firstnameerr"></p>
+      </div>
+      <div class="name">
+        <label for="">Last Name</label>
+        <input type="text" id="lastname">
+         <p class="error lastname-err"></p>
+      </div>
+    </div>
+    <label for="">Email Address</label>
+    <input type="email">
+     <p class="error"></p>
+
+    <div class="query-type">
+      <div class="query">
+      <label for=""> Query Type</label>
+      <button><span><img src="./assets/images/icon-radio-selected.svg" alt=""></span> General Enquiry</button>
+        </div>
+      <div class="query">
+        <label for="">Support Requuest</label>
+        <button><span><img src="./assets/images/icon-radio-selected.svg" alt=""></span>Support Request</button>
+      </div>
+    </div>
+    <p class="error"></p>
+
+    <label for="">Message</label>
+    <textarea name="" id=""></textarea>
+     <p class="error"></p>
+
+    <div class="consent">
+      <div> <img src="./assets/images/icon-checkbox-check.svg" alt=""></div>
+      <p>I consent to being contacted by the team</p>
+    </div>
+     <p class="error"></p>
+
+    <input type="submit" value="submit">
+  </form>
+</div>
+
+<div class="success-container">
+  <div class="success-header">
+    <img src="./assets/images/icon-success-check.svg" alt="">
+    <h2> Message Sent</h2>
+  </div>
+  <p>Thanks for completing the form. We'll be in touch soon!.</p>
+</div>
+<script src="./app.js"></script>
+
+ 
